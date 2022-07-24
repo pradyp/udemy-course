@@ -1,0 +1,24 @@
+<!-- <p>servers works!</p>
+<label for="name">Server Name</label>
+<input id = "name" type="text" [(ngModel)] = "
+">
+<button (click)="onCreateServer()">
+Add Server
+</button>
+<p *ngIf = "serverStatus; else noServer">{{userInput }}</p>
+<ng-template #noServer>
+	<p>
+		No Server was created.
+	</p>
+</ng-template>
+
+<app-server *ngFor = "let noOfServer of noOfServers"></app-server> -->
+<!-- <app-server *ngFor = "let loggingInput of loggingInputs"></app-server> -->
+<button class="btn btn-danger" (click) = "onDisplayDetails()">
+	Display Details
+</button>
+<p *ngIf = "user">Hello My name is pradeep</p>
+<!-- <app-server *ngFor = "let loggingInput of loggingInputs"></app-server> -->
+<div *ngFor="let loggingInput of loggingInputs; let i = index">
+	<li>{{loggingInput}}</li>
+</div>
